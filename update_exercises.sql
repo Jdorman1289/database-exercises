@@ -19,4 +19,5 @@ UPDATE albums SET release_date = release_date - 100;
 
 -- Change 'Michael Jackson' to 'Peter Jackson'
 SELECT * FROM albums WHERE artist = 'Michael Jackson';
-UPDATE albums SET artist = 'Peter Jackson';
+UPDATE albums SET artist = 'Peter Jackson'
+WHERE artist = 'Michael Jackson';
