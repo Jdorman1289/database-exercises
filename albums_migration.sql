@@ -42,3 +42,65 @@ CREATE TABLE albums (
 # Pink Floyd,The Wall,1979,Progressive rock,17.6
 # Santana,Supernatural,1999,Rock,20.5
 # Guns N Roses,Appetite for Destruction,1987,Hard rock,21.6
+
+--- INSERT EXAMPLE ---
+
+# --- INSERT WITH ONE VALUE ---
+# 1. INSERT INTO posts_test (author_name, body) VALUES ('Isaac Yanez', 'This is the best body of text you will ever see');
+#
+#
+# -- INSERT WITH MULTIPLE VALUES ---
+# INSERT INTO posts_test (author_name, body)
+# VALUES ('bob sagget', 'This is bob sagget and idk what else to say'),
+#        ('bob ross', 'This is bob ross and I love painting pictures'),
+#
+#
+#
+#     --- SELECT STATEMENTS ---
+#
+# --- select a specific column in the DB ---
+# SELECT author_name FROM post_test;
+#
+# -- select all the columns in the DB ---
+# SELECT * from post_test;
+#
+#
+#
+# --- SELECT W/ WHERE ---
+#
+# SELECT * FROM posts_test WHERE author_name = "Isaac Yanez";
+#
+# SELECT * FROM posts_test WHERE id = 2;
+#
+# SELECT * FROM posts_test WHERE id != 2;
+#
+# SELECT * FROM posts_test WHERE id < 2;
+#
+# SELECT * FROM posts_test WHERE id > 2;
+#
+#
+# --- UPDATE ---
+#
+# --- Single update item ---
+# UPDATE posts_test
+# SET author_name = "isac yanez",
+#     WHERE id = 1;
+#
+#
+# --- Multiple updated items ---
+# UPDATE posts_test
+# SET author_name = "Isaac Yanez", body = "This is updated info",
+#     WHERE id = 1;
+#
+#
+# --- DELETE ---
+#
+# --- First Find it ---
+# SELECT * FROM posts_test WHERE id = 3;
+#
+# --- Then delete it ---
+# DELETE FROM posts_test WHERE id = 1;
+#
+#
+# --- DELETE ERRYTHANG ---
+# TRUNCATE posts_test;
